@@ -4,14 +4,14 @@ Public Sub FW_Execute()
     On Error GoTo ErrHandler
 
     Log_Init
-    Log_Write "処理開始", "INFO", "SYSTEM"
+    Log_Write "Processing started", "INFO", "SYSTEM"
 
     Application.ScreenUpdating = False
     Application.Calculation = xlCalculationManual
 
     Call Main_Process
 
-    Log_Write "正常終了", "INFO", "SYSTEM"
+    Log_Write "Processing completed successfully", "INFO", "SYSTEM"
 
 CleanExit:
     Application.ScreenUpdating = True

@@ -1,4 +1,4 @@
-Option Explicit
+﻿Option Explicit
 
 Private Const LOG_SHEET As String = "LOG"
 
@@ -6,7 +6,7 @@ Public Sub Log_Init()
     If Not SheetExists(LOG_SHEET) Then
         Sheets.Add After:=Sheets(Sheets.Count)
         ActiveSheet.Name = LOG_SHEET
-        ActiveSheet.Range("A1:D1").Value = Array("日時", "レベル", "処理", "内容")
+        ActiveSheet.Range("A1:D1").Value = Array("Date and Time", "Level", "Process", "Content")
     End If
 End Sub
 

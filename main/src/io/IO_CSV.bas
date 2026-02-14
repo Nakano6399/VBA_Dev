@@ -21,3 +21,5 @@ Public Function CSV_LoadFast(path As String) As Variant
     CSV_LoadFast = data
 
 End Function
+
+
